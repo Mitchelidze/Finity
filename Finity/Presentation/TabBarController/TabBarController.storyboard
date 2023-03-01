@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MIy-9a-NIR">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fiT-Fo-O8Z">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="MIy-9a-NIR" customClass="TabBarController" customModule="Finity" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Vw-8a-EWL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sNw-Oh-P8e" kind="relationship" relationship="viewControllers" id="KQr-cm-ren"/>
+                        <segue destination="nJl-Oz-9vX" kind="relationship" relationship="viewControllers" id="YGG-tN-vvg"/>
+                        <segue destination="fUi-Rf-IxD" kind="relationship" relationship="viewControllers" id="s90-Qf-J9r"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6C-LB-8SF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="3"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="ySD-kQ-uZt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeViewController" id="sNw-Oh-P8e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="e8F-fB-Gpr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQF-sZ-eVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="-246"/>
+        </scene>
+        <!--AnalyticsViewController-->
+        <scene sceneID="HP5-WK-ax0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnalyticsViewController" id="nJl-Oz-9vX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Analytics" image="chart.xyaxis.line" catalog="system" id="5Vx-7M-8U9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOW-hi-sKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="-102"/>
+        </scene>
+        <!--ProfileViewController-->
+        <scene sceneID="NUj-R9-Go8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileViewController" id="fUi-Rf-IxD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="iGN-rf-hMq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OhP-rv-vAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chart.xyaxis.line" catalog="system" width="128" height="102"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
