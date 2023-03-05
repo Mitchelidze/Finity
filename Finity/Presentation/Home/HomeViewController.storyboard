@@ -16,16 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ii-xL-D6A">
-                                <rect key="frame" x="175" y="260" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="L4H-F4-xh2">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="L4H-F4-xh2" secondAttribute="bottom" id="26y-dZ-CR8"/>
+                            <constraint firstItem="L4H-F4-xh2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BKp-6y-0k4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="L4H-F4-xh2" secondAttribute="trailing" id="Hsg-CU-p4i"/>
+                            <constraint firstItem="L4H-F4-xh2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="er5-9z-pqM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="ILs-3U-hLb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
