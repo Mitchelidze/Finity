@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1813F429B4C6AD00863CEC /* BudgetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */; };
+		3B1813F529B4C6AD00863CEC /* BudgetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */; };
 		3BE6744529AA09FD00E65930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744429AA09FD00E65930 /* AppDelegate.swift */; };
 		3BE6744729AA09FD00E65930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744629AA09FD00E65930 /* SceneDelegate.swift */; };
 		3BE6744929AA09FD00E65930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744829AA09FD00E65930 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetingCell.swift; sourceTree = "<group>"; };
+		3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetingCell.xib; sourceTree = "<group>"; };
 		3BE6744129AA09FD00E65930 /* Finity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE6744429AA09FD00E65930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BE6744629AA09FD00E65930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 			children = (
 				3BE6746529AA0B3300E65930 /* HomeViewController.swift */,
 				3BE6746729AA0B3E00E65930 /* HomeViewController.storyboard */,
+				3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */,
+				3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 			dependencies = (
 			);
 			name = Finity;
+			packageProductDependencies = (
+			);
 			productName = Finity;
 			productReference = 3BE6744129AA09FD00E65930 /* Finity.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +180,8 @@
 				Base,
 			);
 			mainGroup = 3BE6743829AA09FD00E65930;
+			packageReferences = (
+			);
 			productRefGroup = 3BE6744229AA09FD00E65930 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,6 +199,7 @@
 				3BE6746429AA0ADA00E65930 /* AnalyticsViewController.storyboard in Resources */,
 				3BE6745129AA0A0000E65930 /* LaunchScreen.storyboard in Resources */,
 				3BE6746C29AA0CC900E65930 /* ProfileViewController.storyboard in Resources */,
+				3B1813F529B4C6AD00863CEC /* BudgetingCell.xib in Resources */,
 				3BE6746829AA0B3E00E65930 /* HomeViewController.storyboard in Resources */,
 				3BE6744E29AA0A0000E65930 /* Assets.xcassets in Resources */,
 				3BE6745D29AA0A5700E65930 /* TabBarController.storyboard in Resources */,
@@ -209,6 +220,7 @@
 				3BE6746A29AA0CB900E65930 /* ProfileViewController.swift in Sources */,
 				3BE6744729AA09FD00E65930 /* SceneDelegate.swift in Sources */,
 				3BE6746629AA0B3300E65930 /* HomeViewController.swift in Sources */,
+				3B1813F429B4C6AD00863CEC /* BudgetingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
