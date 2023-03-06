@@ -22,4 +22,19 @@ class BudgetingCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    @IBAction func onAddButton(_ sender: Any) {
+        guard let viewController = self.window?.rootViewController else {
+            return
+        }
+        
+        let storyboard = UIStoryboard(name: "HomeViewController", bundle: nil)
+        guard let addAssetsViewController = storyboard.instantiateViewController(withIdentifier: "AddAssetsViewController") as? AddAssetsViewController else {
+            return
+        }
+        
+//        addAssetsViewController.modalPresentationStyle = .overFullScreen
+        viewController.present(addAssetsViewController, animated: true, completion: nil)
+    }
 }

@@ -162,6 +162,9 @@
                                         <buttonConfiguration key="configuration" style="tinted" title="Add">
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onAddButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Y2n-gk-7WF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

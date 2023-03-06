@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0486C829B662BC008CD4B7 /* AddAssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486C729B662BC008CD4B7 /* AddAssetsViewController.swift */; };
 		3B1813F429B4C6AD00863CEC /* BudgetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */; };
 		3B1813F529B4C6AD00863CEC /* BudgetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */; };
 		3BE6744529AA09FD00E65930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744429AA09FD00E65930 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B0486C729B662BC008CD4B7 /* AddAssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssetsViewController.swift; sourceTree = "<group>"; };
 		3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetingCell.swift; sourceTree = "<group>"; };
 		3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetingCell.xib; sourceTree = "<group>"; };
 		3BE6744129AA09FD00E65930 /* Finity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				3BE6746729AA0B3E00E65930 /* HomeViewController.storyboard */,
 				3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */,
 				3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */,
+				3B0486C729B662BC008CD4B7 /* AddAssetsViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0486C829B662BC008CD4B7 /* AddAssetsViewController.swift in Sources */,
 				3BE6744929AA09FD00E65930 /* ViewController.swift in Sources */,
 				3BE6745B29AA0A4900E65930 /* TabBarController.swift in Sources */,
 				3BE6746229AA0AC500E65930 /* AnalyticsViewController.swift in Sources */,
