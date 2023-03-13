@@ -7,11 +7,16 @@
 
 import UIKit
 
+protocol AddAssetsDelegate: AnyObject {
+    func setAmountText(text: String)
+}
+
 class AddAssetsViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var amountTextField: UITextField!
     
+    weak var delegate: AddAssetsDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +34,9 @@ class AddAssetsViewController: UIViewController {
             showAlert(message: "Please enter the value price of the asset")
             return
         }
+        
+        delegate?.setAmountText(text: amountString)
+        navigationController?.popViewController(animated: true)
     }
     
     func showAlert(message: String) {

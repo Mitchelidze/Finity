@@ -7,13 +7,17 @@
 
 import UIKit
 
-class BudgetingCell: UITableViewCell {
+class BudgetingCell: UITableViewCell, AddAssetsDelegate {
+    
+    @IBOutlet weak var assetsAddButton: UIButton!
     
     var identifier = "BudgetingCell"
+    let addAssetsViewController = AddAssetsViewController()
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        addAssetsViewController.delegate = self
     }
     
 
@@ -34,7 +38,11 @@ class BudgetingCell: UITableViewCell {
             return
         }
         
-//        addAssetsViewController.modalPresentationStyle = .overFullScreen
         viewController.present(addAssetsViewController, animated: true, completion: nil)
     }
+    
+    func setAmountText(text: String) {
+        addAssetsViewController.amountTextField.text = text
+    }
+    
 }

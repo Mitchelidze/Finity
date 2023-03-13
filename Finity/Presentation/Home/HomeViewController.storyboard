@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Finity" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,13 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="L4H-F4-xh2">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="L4H-F4-xh2">
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="L4H-F4-xh2" secondAttribute="bottom" id="26y-dZ-CR8"/>
                             <constraint firstItem="L4H-F4-xh2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BKp-6y-0k4"/>
@@ -30,7 +30,7 @@
                             <constraint firstItem="L4H-F4-xh2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="er5-9z-pqM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ecd-dE-e3U"/>
+                    <navigationItem key="navigationItem" title="Home" id="ecd-dE-e3U"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="L4H-F4-xh2" id="ak9-HM-QHG"/>
@@ -49,7 +49,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-1E-wmr">
-                                <rect key="frame" x="16" y="91" width="361" height="192"/>
+                                <rect key="frame" x="16" y="121" width="361" height="192"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="AIe-NV-rQS">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="112"/>
@@ -91,7 +91,7 @@
                         <viewLayoutGuide key="safeArea" id="Zpn-n6-jWR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zJb-1E-wmr" firstAttribute="top" secondItem="Zpn-n6-jWR" secondAttribute="top" constant="32" id="6pD-Gp-W0s"/>
+                            <constraint firstItem="zJb-1E-wmr" firstAttribute="top" secondItem="Zpn-n6-jWR" secondAttribute="top" constant="62" id="6pD-Gp-W0s"/>
                             <constraint firstItem="zJb-1E-wmr" firstAttribute="leading" secondItem="Zpn-n6-jWR" secondAttribute="leading" constant="16" id="8o7-qH-lf9"/>
                             <constraint firstItem="Zpn-n6-jWR" firstAttribute="trailing" secondItem="zJb-1E-wmr" secondAttribute="trailing" constant="16" id="G2U-L4-OkH"/>
                         </constraints>
@@ -111,8 +111,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bLe-MB-ghM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="ILs-3U-hLb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SCX-OW-jGv">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="SCX-OW-jGv">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
