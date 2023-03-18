@@ -10,14 +10,36 @@ import UIKit
 class BudgetingCell: UITableViewCell, AddAssetsDelegate {
     
     @IBOutlet weak var assetsAddButton: UIButton!
+    @IBOutlet weak var balanceLabelView: UILabel!
+    @IBOutlet weak var savingsLabelView: UILabel!
+    @IBOutlet weak var assetsLabelView: UILabel!
     
     var identifier = "BudgetingCell"
     let addAssetsViewController = AddAssetsViewController()
+    var isBalanceLabelHidden = true {
+        didSet {
+            balanceLabelView.isHidden = isBalanceLabelHidden
+        }
+    }
+    var isSavingsLabelHidden = true {
+        didSet {
+            savingsLabelView.isHidden = isSavingsLabelHidden
+        }
+    }
+    var isAssetsLabelHidden = true {
+        didSet {
+            assetsLabelView.isHidden = isAssetsLabelHidden
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
         addAssetsViewController.delegate = self
+        isBalanceLabelHidden = true
+        isSavingsLabelHidden = true
+        isAssetsLabelHidden = true
+        
     }
     
 
@@ -42,7 +64,8 @@ class BudgetingCell: UITableViewCell, AddAssetsDelegate {
     }
     
     func setAmountText(text: String) {
-        addAssetsViewController.amountTextField.text = text
+       assetsLabelView.text = text
+        assetsLabelView.isHidden = false
     }
     
 }

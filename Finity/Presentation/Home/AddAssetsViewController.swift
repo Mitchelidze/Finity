@@ -35,7 +35,7 @@ class AddAssetsViewController: UIViewController {
             return
         }
         
-        delegate?.setAmountText(text: amountString)
+        delegate?.setAmountText(text: amountTextField.text ?? "")
         navigationController?.popViewController(animated: true)
     }
     
