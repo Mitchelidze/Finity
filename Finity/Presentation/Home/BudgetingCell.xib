@@ -215,6 +215,7 @@
                 <outlet property="assetsAddButton" destination="uff-cd-AIx" id="3uF-4e-n8B"/>
                 <outlet property="assetsLabelView" destination="Kom-Ug-8PC" id="JrF-5P-aaO"/>
                 <outlet property="balanceLabelView" destination="UdM-kC-F4q" id="z2O-uo-pE0"/>
+                <outlet property="cardView" destination="j17-Dn-NGI" id="xs2-ib-383"/>
                 <outlet property="savingsLabelView" destination="z9c-xN-b8j" id="UE7-jS-amt"/>
             </connections>
             <point key="canvasLocation" x="224.42748091603053" y="124.29577464788733"/>

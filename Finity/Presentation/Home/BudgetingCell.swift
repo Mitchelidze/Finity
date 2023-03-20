@@ -13,6 +13,7 @@ class BudgetingCell: UITableViewCell, AddAssetsDelegate {
     @IBOutlet weak var balanceLabelView: UILabel!
     @IBOutlet weak var savingsLabelView: UILabel!
     @IBOutlet weak var assetsLabelView: UILabel!
+    @IBOutlet weak var cardView: UIView!
     
     var identifier = "BudgetingCell"
     let addAssetsViewController = AddAssetsViewController()
@@ -39,6 +40,8 @@ class BudgetingCell: UITableViewCell, AddAssetsDelegate {
         isBalanceLabelHidden = true
         isSavingsLabelHidden = true
         isAssetsLabelHidden = true
+        
+        cardView.layer.cornerRadius = 14
         
     }
     
