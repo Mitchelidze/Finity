@@ -13,12 +13,33 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var subTitleLabelView: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var signUpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        if FirebaseAuth.Auth.auth().currentUser != nil {
+//            passwordTextField.isHidden = true
+//            emailTextField.isHidden = true
+//            titleLabelView.isHidden = true
+//            subTitleLabelView.isHidden = true
+//            signUpButton.isHidden = true
+//
+//            let signOutButton: UIButton = {
+//                let button = UIButton()
+//                button.backgroundColor = .systemBlue
+//                button.setTitleColor(.white, for: .normal)
+//                button.setTitle("Log out", for: .normal)
+//                return button
+//            }()
+//
+//            view.addSubview(signOutButton)
+//            signOutButton.frame = CGRect(x: 20, y: 150, width: view.frame.size.width - 40, height: 48)
+//            signOutButton.addTarget(self, action: #selector(logOutTapped), for: .touchUpInside)
+//        }
 
     }
+    
     
 
     @IBAction func onSignUp(_ sender: Any) {
@@ -34,44 +55,53 @@ class ProfileViewController: UIViewController {
                 return
             }
             
-            guard error == nil else {
-                strongSelf.showCreateAccount(email: email, password: password)
-                return
-            }
+//            guard error == nil else {
+//                strongSelf.showCreateAccount(email: email, password: password)
+//                return
+//            }
             print("signed in")
             strongSelf.passwordTextField.isHidden = true
             strongSelf.emailTextField.isHidden = true
             strongSelf.titleLabelView.isHidden = true
             strongSelf.subTitleLabelView.isHidden = true
+            strongSelf.signUpButton.isHidden = true
+            
+            strongSelf.emailTextField.resignFirstResponder()
+            strongSelf.passwordTextField.resignFirstResponder()
         })
     }
     
-    func showCreateAccount(email: String, password: String) {
-        let alert = UIAlertController(title: "Create Account", message: "Would you like to create account", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Contionue", style: .default, handler: {_ in
-            FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] result, error in
-                
-                guard let strongSelf = self else {
-                    return
-                }
-                
-                guard error == nil else {
-                    print("signing up filed: \(error!.localizedDescription)")
-                    return
-                }
-                print("signed in")
-                strongSelf.passwordTextField.isHidden = true
-                strongSelf.emailTextField.isHidden = true
-                strongSelf.titleLabelView.isHidden = true
-                strongSelf.subTitleLabelView.isHidden = true
-            })
-            
-        }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {_ in
-            
-        }))
-        
-        present(alert, animated: true)
-    }
+//    func showCreateAccount(email: String, password: String) {
+//        let alert = UIAlertController(title: "Create Account", message: "Would you like to create account", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Contionue", style: .default, handler: {_ in
+//            FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] result, error in
+//
+//                guard let strongSelf = self else {
+//                    return
+//                }
+//
+//                guard error == nil else {
+//                    print("signing up filed: \(error!.localizedDescription)")
+//                    return
+//                }
+//                print("signed in")
+//                strongSelf.passwordTextField.isHidden = true
+//                strongSelf.emailTextField.isHidden = true
+//                strongSelf.titleLabelView.isHidden = true
+//                strongSelf.subTitleLabelView.isHidden = true
+//                strongSelf.signUpButton.isHidden = true
+//
+//
+//                strongSelf.emailTextField.resignFirstResponder()
+//                strongSelf.passwordTextField.resignFirstResponder()
+//            })
+//
+//        }))
+//        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {_ in
+//
+//        }))
+//
+//        present(alert, animated: true)
+//    }
                         
 }
