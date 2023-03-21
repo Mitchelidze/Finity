@@ -77,6 +77,9 @@
                                         <rect key="frame" x="165.66666666666666" y="0.0" width="70" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log in"/>
+                                        <connections>
+                                            <action selector="onLogIn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sNM-oq-hVf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -94,7 +97,9 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="Vto-Fw-4hY"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="alreadyHaveAnAccountLabelView" destination="wOP-Bc-b6g" id="u7j-do-K2v"/>
                         <outlet property="emailTextField" destination="pNy-am-NN9" id="TBD-Jg-w7X"/>
+                        <outlet property="logInButton" destination="USX-gv-ze3" id="fRw-lQ-oZC"/>
                         <outlet property="passwordTextField" destination="IAP-vv-KaQ" id="so1-0G-7Vd"/>
                         <outlet property="signUpButton" destination="ZB7-NF-MOE" id="oMF-5l-QEh"/>
                         <outlet property="subTitleLabelView" destination="2UD-eh-MbL" id="gR6-rB-gvz"/>
