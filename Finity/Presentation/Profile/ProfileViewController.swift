@@ -32,6 +32,29 @@ class ProfileViewController: UIViewController {
         alreadyHaveAnAccountLabelView.text = "Don't have an account?"
         logInButton.setTitle("Sign up", for: .normal)
         
+        guard let email = emailTextField.text, !email.isEmpty,
+              let password = passwordTextField.text, !password.isEmpty else {
+            
+            showAlert(message: "Please enter the email and password")
+            return
+        }
+        
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { [weak self] result, error in
+
+            guard self != nil else {
+                return
+            }
+
+            guard error == nil else {
+                print("Log in filed: \(error!.localizedDescription)")
+                return
+            }
+            print("Loged in")
+            self?.hideUIElements()
+        })
+        
+        
+        
     }
     
     @IBAction func onSignUp(_ sender: Any) {
@@ -45,7 +68,7 @@ class ProfileViewController: UIViewController {
         
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] result, error in
 
-            guard let strongSelf = self else {
+            guard self != nil else {
                 return
             }
 
@@ -54,17 +77,7 @@ class ProfileViewController: UIViewController {
                 return
             }
             print("signed in")
-            strongSelf.passwordTextField.isHidden = true
-            strongSelf.emailTextField.isHidden = true
-            strongSelf.titleLabelView.isHidden = true
-            strongSelf.subTitleLabelView.isHidden = true
-            strongSelf.signUpButton.isHidden = true
-            strongSelf.alreadyHaveAnAccountLabelView.isHidden = true
-            strongSelf.logInButton.isHidden = true
-
-
-            strongSelf.emailTextField.resignFirstResponder()
-            strongSelf.passwordTextField.resignFirstResponder()
+            self?.hideUIElements()
         })
     }
     
@@ -73,6 +86,19 @@ class ProfileViewController: UIViewController {
         let okAction = UIAlertAction(title: "Got it", style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
+    }
+    
+    func hideUIElements() {
+        passwordTextField.isHidden = true
+        emailTextField.isHidden = true
+        titleLabelView.isHidden = true
+        subTitleLabelView.isHidden = true
+        signUpButton.isHidden = true
+        alreadyHaveAnAccountLabelView.isHidden = true
+        logInButton.isHidden = true
+
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
     }
                         
 }

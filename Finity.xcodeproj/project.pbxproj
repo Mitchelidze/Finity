@@ -38,6 +38,13 @@
 		3B09291929C888D3006B172E /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3B09291829C888D3006B172E /* FirebaseStorageCombine-Community */; };
 		3B1813F429B4C6AD00863CEC /* BudgetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */; };
 		3B1813F529B4C6AD00863CEC /* BudgetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */; };
+		3B24379B29CB11B900611838 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B24379A29CB11B900611838 /* Onboarding.storyboard */; };
+		3B24379D29CB19C000611838 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B24379C29CB19C000611838 /* OnboardingViewController.swift */; };
+		3B2437A029CB1A1200611838 /* OnboardingImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B24379E29CB1A1200611838 /* OnboardingImageCell.swift */; };
+		3B2437A129CB1A1200611838 /* OnboardingImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B24379F29CB1A1200611838 /* OnboardingImageCell.xib */; };
+		3B2437A329CB304000611838 /* OnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A229CB304000611838 /* OnboardingDataSource.swift */; };
+		3B2437A729CB30DA00611838 /* AppPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A629CB30DA00611838 /* AppPreviewImage.swift */; };
+		3B2437A929CB318300611838 /* AppPreviewTextContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A829CB318300611838 /* AppPreviewTextContent.swift */; };
 		3BE6744529AA09FD00E65930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744429AA09FD00E65930 /* AppDelegate.swift */; };
 		3BE6744729AA09FD00E65930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744629AA09FD00E65930 /* SceneDelegate.swift */; };
 		3BE6744929AA09FD00E65930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744829AA09FD00E65930 /* ViewController.swift */; };
@@ -58,6 +65,13 @@
 		3B0928E129C88850006B172E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetingCell.swift; sourceTree = "<group>"; };
 		3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetingCell.xib; sourceTree = "<group>"; };
+		3B24379A29CB11B900611838 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		3B24379C29CB19C000611838 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		3B24379E29CB1A1200611838 /* OnboardingImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingImageCell.swift; sourceTree = "<group>"; };
+		3B24379F29CB1A1200611838 /* OnboardingImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingImageCell.xib; sourceTree = "<group>"; };
+		3B2437A229CB304000611838 /* OnboardingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDataSource.swift; sourceTree = "<group>"; };
+		3B2437A629CB30DA00611838 /* AppPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreviewImage.swift; sourceTree = "<group>"; };
+		3B2437A829CB318300611838 /* AppPreviewTextContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreviewTextContent.swift; sourceTree = "<group>"; };
 		3BE6744129AA09FD00E65930 /* Finity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE6744429AA09FD00E65930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BE6744629AA09FD00E65930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +127,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B24379929CB119500611838 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3B24379A29CB11B900611838 /* Onboarding.storyboard */,
+				3B24379C29CB19C000611838 /* OnboardingViewController.swift */,
+				3B24379E29CB1A1200611838 /* OnboardingImageCell.swift */,
+				3B24379F29CB1A1200611838 /* OnboardingImageCell.xib */,
+				3B2437A229CB304000611838 /* OnboardingDataSource.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3B2437A429CB309800611838 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3B2437A529CB30AF00611838 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3B2437A529CB30AF00611838 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B2437A629CB30DA00611838 /* AppPreviewImage.swift */,
+				3B2437A829CB318300611838 /* AppPreviewTextContent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3BE6743829AA09FD00E65930 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +175,7 @@
 		3BE6744329AA09FD00E65930 /* Finity */ = {
 			isa = PBXGroup;
 			children = (
+				3B2437A429CB309800611838 /* Domain */,
 				3BE6745829AA0A0700E65930 /* Presentation */,
 				3BE6744429AA09FD00E65930 /* AppDelegate.swift */,
 				3BE6744629AA09FD00E65930 /* SceneDelegate.swift */,
@@ -147,6 +191,7 @@
 		3BE6745829AA0A0700E65930 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3B24379929CB119500611838 /* Onboarding */,
 				3BE6746029AA0AA000E65930 /* Profile */,
 				3BE6745F29AA0A9800E65930 /* Analytics */,
 				3BE6745E29AA0A8B00E65930 /* Home */,
@@ -288,8 +333,10 @@
 				3B0928E229C88850006B172E /* GoogleService-Info.plist in Resources */,
 				3BE6745129AA0A0000E65930 /* LaunchScreen.storyboard in Resources */,
 				3BE6746C29AA0CC900E65930 /* ProfileViewController.storyboard in Resources */,
+				3B2437A129CB1A1200611838 /* OnboardingImageCell.xib in Resources */,
 				3B1813F529B4C6AD00863CEC /* BudgetingCell.xib in Resources */,
 				3BE6746829AA0B3E00E65930 /* HomeViewController.storyboard in Resources */,
+				3B24379B29CB11B900611838 /* Onboarding.storyboard in Resources */,
 				3BE6744E29AA0A0000E65930 /* Assets.xcassets in Resources */,
 				3BE6745D29AA0A5700E65930 /* TabBarController.storyboard in Resources */,
 			);
@@ -305,12 +352,17 @@
 				3B0486C829B662BC008CD4B7 /* AddAssetsViewController.swift in Sources */,
 				3BE6744929AA09FD00E65930 /* ViewController.swift in Sources */,
 				3BE6745B29AA0A4900E65930 /* TabBarController.swift in Sources */,
+				3B2437A729CB30DA00611838 /* AppPreviewImage.swift in Sources */,
+				3B2437A329CB304000611838 /* OnboardingDataSource.swift in Sources */,
 				3BE6746229AA0AC500E65930 /* AnalyticsViewController.swift in Sources */,
 				3BE6744529AA09FD00E65930 /* AppDelegate.swift in Sources */,
 				3BE6746A29AA0CB900E65930 /* ProfileViewController.swift in Sources */,
+				3B2437A029CB1A1200611838 /* OnboardingImageCell.swift in Sources */,
 				3BE6744729AA09FD00E65930 /* SceneDelegate.swift in Sources */,
+				3B24379D29CB19C000611838 /* OnboardingViewController.swift in Sources */,
 				3BE6746629AA0B3300E65930 /* HomeViewController.swift in Sources */,
 				3B1813F429B4C6AD00863CEC /* BudgetingCell.swift in Sources */,
+				3B2437A929CB318300611838 /* AppPreviewTextContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
