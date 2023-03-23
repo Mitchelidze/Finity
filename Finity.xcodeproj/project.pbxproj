@@ -45,9 +45,10 @@
 		3B2437A329CB304000611838 /* OnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A229CB304000611838 /* OnboardingDataSource.swift */; };
 		3B2437A729CB30DA00611838 /* AppPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A629CB30DA00611838 /* AppPreviewImage.swift */; };
 		3B2437A929CB318300611838 /* AppPreviewTextContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A829CB318300611838 /* AppPreviewTextContent.swift */; };
+		3B2437AE29CCA0DC00611838 /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437AC29CCA0DC00611838 /* BudgetCell.swift */; };
+		3B2437AF29CCA0DC00611838 /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2437AD29CCA0DC00611838 /* BudgetCell.xib */; };
 		3BE6744529AA09FD00E65930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744429AA09FD00E65930 /* AppDelegate.swift */; };
 		3BE6744729AA09FD00E65930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744629AA09FD00E65930 /* SceneDelegate.swift */; };
-		3BE6744929AA09FD00E65930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744829AA09FD00E65930 /* ViewController.swift */; };
 		3BE6744E29AA0A0000E65930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE6744D29AA0A0000E65930 /* Assets.xcassets */; };
 		3BE6745129AA0A0000E65930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE6744F29AA0A0000E65930 /* LaunchScreen.storyboard */; };
 		3BE6745B29AA0A4900E65930 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6745A29AA0A4900E65930 /* TabBarController.swift */; };
@@ -72,10 +73,11 @@
 		3B2437A229CB304000611838 /* OnboardingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDataSource.swift; sourceTree = "<group>"; };
 		3B2437A629CB30DA00611838 /* AppPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreviewImage.swift; sourceTree = "<group>"; };
 		3B2437A829CB318300611838 /* AppPreviewTextContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreviewTextContent.swift; sourceTree = "<group>"; };
+		3B2437AC29CCA0DC00611838 /* BudgetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCell.swift; sourceTree = "<group>"; };
+		3B2437AD29CCA0DC00611838 /* BudgetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetCell.xib; sourceTree = "<group>"; };
 		3BE6744129AA09FD00E65930 /* Finity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE6744429AA09FD00E65930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BE6744629AA09FD00E65930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3BE6744829AA09FD00E65930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BE6744D29AA0A0000E65930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BE6745029AA0A0000E65930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE6745229AA0A0000E65930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +158,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		3B2437AA29CC9E5600611838 /* NetWorthCell */ = {
+			isa = PBXGroup;
+			children = (
+				3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */,
+				3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */,
+			);
+			path = NetWorthCell;
+			sourceTree = "<group>";
+		};
+		3B2437AB29CCA04700611838 /* BudgetingCell */ = {
+			isa = PBXGroup;
+			children = (
+				3B2437AC29CCA0DC00611838 /* BudgetCell.swift */,
+				3B2437AD29CCA0DC00611838 /* BudgetCell.xib */,
+			);
+			path = BudgetingCell;
+			sourceTree = "<group>";
+		};
 		3BE6743829AA09FD00E65930 = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +199,6 @@
 				3BE6745829AA0A0700E65930 /* Presentation */,
 				3BE6744429AA09FD00E65930 /* AppDelegate.swift */,
 				3BE6744629AA09FD00E65930 /* SceneDelegate.swift */,
-				3BE6744829AA09FD00E65930 /* ViewController.swift */,
 				3BE6744D29AA0A0000E65930 /* Assets.xcassets */,
 				3BE6744F29AA0A0000E65930 /* LaunchScreen.storyboard */,
 				3BE6745229AA0A0000E65930 /* Info.plist */,
@@ -212,10 +231,10 @@
 		3BE6745E29AA0A8B00E65930 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3B2437AB29CCA04700611838 /* BudgetingCell */,
+				3B2437AA29CC9E5600611838 /* NetWorthCell */,
 				3BE6746529AA0B3300E65930 /* HomeViewController.swift */,
 				3BE6746729AA0B3E00E65930 /* HomeViewController.storyboard */,
-				3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */,
-				3B1813F329B4C6AD00863CEC /* BudgetingCell.xib */,
 				3B0486C729B662BC008CD4B7 /* AddAssetsViewController.swift */,
 			);
 			path = Home;
@@ -339,6 +358,7 @@
 				3B24379B29CB11B900611838 /* Onboarding.storyboard in Resources */,
 				3BE6744E29AA0A0000E65930 /* Assets.xcassets in Resources */,
 				3BE6745D29AA0A5700E65930 /* TabBarController.storyboard in Resources */,
+				3B2437AF29CCA0DC00611838 /* BudgetCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,10 +370,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0486C829B662BC008CD4B7 /* AddAssetsViewController.swift in Sources */,
-				3BE6744929AA09FD00E65930 /* ViewController.swift in Sources */,
 				3BE6745B29AA0A4900E65930 /* TabBarController.swift in Sources */,
 				3B2437A729CB30DA00611838 /* AppPreviewImage.swift in Sources */,
 				3B2437A329CB304000611838 /* OnboardingDataSource.swift in Sources */,
+				3B2437AE29CCA0DC00611838 /* BudgetCell.swift in Sources */,
 				3BE6746229AA0AC500E65930 /* AnalyticsViewController.swift in Sources */,
 				3BE6744529AA09FD00E65930 /* AppDelegate.swift in Sources */,
 				3BE6746A29AA0CB900E65930 /* ProfileViewController.swift in Sources */,
