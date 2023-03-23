@@ -55,7 +55,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZB7-NF-MOE">
                                                 <rect key="frame" x="0.0" y="128" width="361" height="48"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                                    <backgroundConfiguration key="background" cornerRadius="12"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onSignUp:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="riv-u8-JTv"/>
                                                 </connections>
@@ -83,15 +86,33 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5U-dU-503">
+                                <rect key="frame" x="16" y="697" width="361" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="RZD-F5-VOM"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Log Out">
+                                    <backgroundConfiguration key="background" cornerRadius="12"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onLogOut:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ycu-lw-3Yi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="l9E-fu-MLc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="2Qc-Qe-d5D"/>
+                            <constraint firstItem="d5U-dU-503" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="3B3-wU-Uck"/>
                             <constraint firstItem="l9E-fu-MLc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="120" id="Ajz-nz-r4c"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="l9E-fu-MLc" secondAttribute="trailing" constant="16" id="H90-Va-QrE"/>
                             <constraint firstItem="jlQ-aW-QeB" firstAttribute="top" secondItem="ZB7-NF-MOE" secondAttribute="bottom" constant="14" id="gHl-Zt-ZO0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="d5U-dU-503" secondAttribute="trailing" constant="16" id="icm-Em-PDs"/>
                             <constraint firstItem="jlQ-aW-QeB" firstAttribute="leading" secondItem="ZB7-NF-MOE" secondAttribute="leading" id="m2F-99-PGE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="d5U-dU-503" secondAttribute="bottom" constant="24" id="y5g-KT-QuF"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="Vto-Fw-4hY"/>
@@ -100,6 +121,7 @@
                         <outlet property="alreadyHaveAnAccountLabelView" destination="wOP-Bc-b6g" id="u7j-do-K2v"/>
                         <outlet property="emailTextField" destination="pNy-am-NN9" id="TBD-Jg-w7X"/>
                         <outlet property="logInButton" destination="USX-gv-ze3" id="fRw-lQ-oZC"/>
+                        <outlet property="logOutButton" destination="d5U-dU-503" id="XzN-PO-585"/>
                         <outlet property="passwordTextField" destination="IAP-vv-KaQ" id="so1-0G-7Vd"/>
                         <outlet property="signUpButton" destination="ZB7-NF-MOE" id="oMF-5l-QEh"/>
                         <outlet property="subTitleLabelView" destination="2UD-eh-MbL" id="gR6-rB-gvz"/>
@@ -115,6 +137,9 @@
         <image name="person" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

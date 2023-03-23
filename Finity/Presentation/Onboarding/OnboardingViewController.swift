@@ -13,6 +13,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var dataSource: OnboardingDataSource?
+
     
     private var infoContentData = [
         AppPreviewTextContent(title: "Explore Upcoming and Nearby Events "),
@@ -22,7 +23,8 @@ class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print("OnboardingViewController loaded")
         setupLayout()
         
         dataSource = OnboardingDataSource(collectionView: collectionView)
@@ -42,6 +44,11 @@ class OnboardingViewController: UIViewController {
     }
     
     @IBAction func onSkip(_ sender: Any) {
+        print("skip tapped") //იპრინტება ანუ ფუნქციაში შემოდიs
+        
+        self.dismiss(animated: true, completion: nil)
+        
+        
     }
     
     @IBAction func onContinue(_ sender: Any) {

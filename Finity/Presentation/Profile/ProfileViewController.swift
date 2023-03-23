@@ -16,13 +16,24 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var alreadyHaveAnAccountLabelView: UILabel!
     @IBOutlet weak var logInButton: UIButton!
-    
+    @IBOutlet weak var logOutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        logOutButton.isHidden = true
     }
     
+    @IBAction func onLogOut(_ sender: Any) {
+        do {
+            try FirebaseAuth.Auth.auth().signOut()
+            // Hide the Logout button and show the Login UI elements
+            logOutButton.isHidden = true
+//            showUIElements()
+        } catch {
+            print("Error signing out: \(error.localizedDescription)")
+        }
+    }
     
     @IBAction func onLogIn(_ sender: Any) {
         print("tapped log in button")
@@ -31,54 +42,40 @@ class ProfileViewController: UIViewController {
         signUpButton.setTitle("Log in", for: .normal)
         alreadyHaveAnAccountLabelView.text = "Don't have an account?"
         logInButton.setTitle("Sign up", for: .normal)
-        
-        guard let email = emailTextField.text, !email.isEmpty,
-              let password = passwordTextField.text, !password.isEmpty else {
-            
-            showAlert(message: "Please enter the email and password")
-            return
-        }
-        
-        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { [weak self] result, error in
-
-            guard self != nil else {
-                return
-            }
-
-            guard error == nil else {
-                print("Log in filed: \(error!.localizedDescription)")
-                return
-            }
-            print("Loged in")
-            self?.hideUIElements()
-        })
-        
-        
-        
     }
     
     @IBAction func onSignUp(_ sender: Any) {
         print("Sign up button tapped")
-        guard let email = emailTextField.text, !email.isEmpty,
-              let password = passwordTextField.text, !password.isEmpty else {
-            
-            showAlert(message: "Please enter the email and password")
-            return
-        }
-        
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] result, error in
-
-            guard self != nil else {
+            guard let email = emailTextField.text, !email.isEmpty,
+                  let password = passwordTextField.text, !password.isEmpty else {
+                
+                showAlert(message: "Please enter the email and password")
                 return
             }
-
-            guard error == nil else {
-                print("signing up filed: \(error!.localizedDescription)")
-                return
-            }
-            print("signed in")
-            self?.hideUIElements()
-        })
+            FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { [weak self] result, error in
+                
+                guard self != nil else {
+                    return
+                }
+                
+                guard error == nil else {
+                    FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { result, error in
+                        
+                        guard error == nil else {
+                            print("signing up failed: \(error!.localizedDescription)")
+                            return
+                        }
+                        
+                        print("signed up")
+                        self?.hideUIElements()
+                        self?.logOutButton.isHidden = false
+                    })
+                    return
+                }
+                print("signed in")
+                self?.hideUIElements()
+                self?.logOutButton.isHidden = false
+            })
     }
     
     func showAlert(message: String) {
