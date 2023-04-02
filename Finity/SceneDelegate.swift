@@ -13,17 +13,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-//        guard let scene = (scene as? UIWindowScene) else { return }
-//        window = UIWindow(windowScene: scene)
-//        let onboardingViewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "OnboardingViewController")
-//        window?.rootViewController = UINavigationController(rootViewController: onboardingViewController)
-//        window?.makeKeyAndVisible()
-        
         guard let scene = (scene as? UIWindowScene) else { return }
-                window = UIWindow(windowScene: scene)
-                window?.makeKeyAndVisible()
-                let vc = UIStoryboard(name: "TabBarController", bundle: nil).instantiateViewController(withIdentifier: "TabBarController")
-                window?.rootViewController = UINavigationController(rootViewController: vc)
+        window = UIWindow(windowScene: scene)
+        let onboardingViewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "OnboardingViewController")
+        window?.rootViewController = UINavigationController(rootViewController: onboardingViewController)
+        window?.makeKeyAndVisible()
+        
+//        guard let scene = (scene as? UIWindowScene) else { return }
+//                window = UIWindow(windowScene: scene)
+//                window?.makeKeyAndVisible()
+//                let vc = UIStoryboard(name: "TabBarController", bundle: nil).instantiateViewController(withIdentifier: "TabBarController")
+//                window?.rootViewController = UINavigationController(rootViewController: vc)
+        
+
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

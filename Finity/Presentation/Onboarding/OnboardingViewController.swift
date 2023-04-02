@@ -30,7 +30,7 @@ class OnboardingViewController: UIViewController {
         dataSource = OnboardingDataSource(collectionView: collectionView)
         dataSource?.scrollViewWillEndDragging = { [weak self] index in
             guard let self = self else { return }
-            
+            guard index <= self.infoContentData.count - 1 else { return }
             self.pageControlView.currentPage = index
             
             let infoContent = self.infoContentData[index]
