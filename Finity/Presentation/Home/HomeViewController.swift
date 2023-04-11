@@ -25,11 +25,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "BudgetingCell", for: indexPath) as! BudgetingCell
-//        return cell
         
         if indexPath.row == 0 {
-                // Set the first cell to a random movie
             let cell = tableView.dequeueReusableCell(withIdentifier: "BudgetingCell", for: indexPath) as! BudgetingCell
             return cell
             } else {

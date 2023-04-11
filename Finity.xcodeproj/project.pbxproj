@@ -47,6 +47,7 @@
 		3B2437A929CB318300611838 /* AppPreviewTextContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A829CB318300611838 /* AppPreviewTextContent.swift */; };
 		3B2437AE29CCA0DC00611838 /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437AC29CCA0DC00611838 /* BudgetCell.swift */; };
 		3B2437AF29CCA0DC00611838 /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2437AD29CCA0DC00611838 /* BudgetCell.xib */; };
+		3B62754029E583DE006EA28F /* AddSavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62753F29E583DE006EA28F /* AddSavingsViewController.swift */; };
 		3BE6744529AA09FD00E65930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744429AA09FD00E65930 /* AppDelegate.swift */; };
 		3BE6744729AA09FD00E65930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6744629AA09FD00E65930 /* SceneDelegate.swift */; };
 		3BE6744E29AA0A0000E65930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE6744D29AA0A0000E65930 /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		3B2437A829CB318300611838 /* AppPreviewTextContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreviewTextContent.swift; sourceTree = "<group>"; };
 		3B2437AC29CCA0DC00611838 /* BudgetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCell.swift; sourceTree = "<group>"; };
 		3B2437AD29CCA0DC00611838 /* BudgetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetCell.xib; sourceTree = "<group>"; };
+		3B62753F29E583DE006EA28F /* AddSavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSavingsViewController.swift; sourceTree = "<group>"; };
 		3BE6744129AA09FD00E65930 /* Finity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE6744429AA09FD00E65930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BE6744629AA09FD00E65930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				3BE6746529AA0B3300E65930 /* HomeViewController.swift */,
 				3BE6746729AA0B3E00E65930 /* HomeViewController.storyboard */,
 				3B0486C729B662BC008CD4B7 /* AddAssetsViewController.swift */,
+				3B62753F29E583DE006EA28F /* AddSavingsViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				3B2437A329CB304000611838 /* OnboardingDataSource.swift in Sources */,
 				3B2437AE29CCA0DC00611838 /* BudgetCell.swift in Sources */,
 				3BE6746229AA0AC500E65930 /* AnalyticsViewController.swift in Sources */,
+				3B62754029E583DE006EA28F /* AddSavingsViewController.swift in Sources */,
 				3BE6744529AA09FD00E65930 /* AppDelegate.swift in Sources */,
 				3BE6746A29AA0CB900E65930 /* ProfileViewController.swift in Sources */,
 				3B2437A029CB1A1200611838 /* OnboardingImageCell.swift in Sources */,

@@ -89,6 +89,9 @@
                                                 <buttonConfiguration key="configuration" style="tinted" title="Add">
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onAddCashBalance:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Mzm-MF-LJd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -136,6 +139,9 @@
                                                 <buttonConfiguration key="configuration" style="tinted" title="Add">
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onAddSavings:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1oP-ZI-PV7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -184,7 +190,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="onAddButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Y2n-gk-7WF"/>
+                                                    <action selector="onAddAssets:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dBK-uX-bjn"/>
                                                 </connections>
                                             </button>
                                         </subviews>

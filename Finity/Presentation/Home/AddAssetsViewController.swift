@@ -7,16 +7,10 @@
 
 import UIKit
 
-protocol AddAssetsDelegate: AnyObject {
-    func setAmountText(text: String)
-}
-
 class AddAssetsViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var amountTextField: UITextField!
-    
-    weak var delegate: AddAssetsDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +29,10 @@ class AddAssetsViewController: UIViewController {
             return
         }
         
-        delegate?.setAmountText(text: amountTextField.text ?? "")
-        navigationController?.popViewController(animated: true)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "Asset") , object: nil, userInfo: ["AmountText": amountString])
+        
+        self.dismiss(animated: true)
+        
     }
     
     func showAlert(message: String) {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BudgetingCell: UITableViewCell, AddAssetsDelegate {
+class BudgetingCell: UITableViewCell {
     
     @IBOutlet weak var assetsAddButton: UIButton!
     @IBOutlet weak var balanceLabelView: UILabel!
@@ -17,31 +17,43 @@ class BudgetingCell: UITableViewCell, AddAssetsDelegate {
     
     var identifier = "BudgetingCell"
     let addAssetsViewController = AddAssetsViewController()
+    
     var isBalanceLabelHidden = true {
         didSet {
             balanceLabelView.isHidden = isBalanceLabelHidden
         }
     }
+    
     var isSavingsLabelHidden = true {
         didSet {
             savingsLabelView.isHidden = isSavingsLabelHidden
         }
     }
+    
     var isAssetsLabelHidden = true {
         didSet {
             assetsLabelView.isHidden = isAssetsLabelHidden
         }
     }
+    
+    var isAddAssetsButtonHidden = true {
+        didSet {
+            assetsAddButton.isHidden = isAddAssetsButtonHidden
+        }
+    }
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        addAssetsViewController.delegate = self
         isBalanceLabelHidden = true
         isSavingsLabelHidden = true
         isAssetsLabelHidden = true
         
+        
         cardView.layer.cornerRadius = 14
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationReceived(_:)), name: Notification.Name("Asset"), object: nil)
         
     }
     
@@ -52,8 +64,34 @@ class BudgetingCell: UITableViewCell, AddAssetsDelegate {
         // Configure the view for the selected state
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     
-    @IBAction func onAddButton(_ sender: Any) {
+    @objc func notificationReceived(_ notification: NSNotification) {
+        isAssetsLabelHidden = false
+        isAddAssetsButtonHidden = true
+        
+        if let text = notification.userInfo?["AmountText"] as? String {
+            assetsLabelView.text = text
+        }
+    }
+    
+    @IBAction func onAddCashBalance(_ sender: Any) {
+        guard let viewController = self.window?.rootViewController else {
+            return
+        }
+        
+        let storyboard = UIStoryboard(name: "HomeViewController", bundle: nil)
+        guard let addAssetsViewController = storyboard.instantiateViewController(withIdentifier: "AddAssetsViewController") as? AddAssetsViewController else {
+            return
+        }
+        
+        viewController.present(addAssetsViewController, animated: true, completion: nil)
+
+    }
+    
+    @IBAction func onAddSavings(_ sender: Any) {
         guard let viewController = self.window?.rootViewController else {
             return
         }
@@ -66,9 +104,18 @@ class BudgetingCell: UITableViewCell, AddAssetsDelegate {
         viewController.present(addAssetsViewController, animated: true, completion: nil)
     }
     
-    func setAmountText(text: String) {
-       assetsLabelView.text = text
-        assetsLabelView.isHidden = false
+    
+    @IBAction func onAddAssets(_ sender: Any) {
+        guard let viewController = self.window?.rootViewController else {
+            return
+        }
+        
+        let storyboard = UIStoryboard(name: "HomeViewController", bundle: nil)
+        guard let addAssetsViewController = storyboard.instantiateViewController(withIdentifier: "AddAssetsViewController") as? AddAssetsViewController else {
+            return
+        }
+        
+        viewController.present(addAssetsViewController, animated: true, completion: nil)
     }
     
 }
