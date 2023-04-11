@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  AddSavingsViewController.swift
 //  Finity
 //
-//  Created by michelidze'smacbook on 25.02.23.
+//  Created by michelidze'smacbook on 11.04.23.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class AddSavingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-
