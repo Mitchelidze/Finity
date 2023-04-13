@@ -2,7 +2,7 @@
 //  BudgetCell.swift
 //  Finity
 //
-//  Created by michelidze'smacbook on 23.03.23.
+//  Created by michelidze'smacbook on 12.04.23.
 //
 
 import UIKit
@@ -27,5 +27,7 @@ class BudgetCell: UITableViewCell {
     }
     
     @IBAction func onTryForFree(_ sender: Any) {
+        
     }
+    
 }
