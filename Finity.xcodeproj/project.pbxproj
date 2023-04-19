@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D0F93F29F07EBE00805B80 /* SalaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0F93E29F07EBE00805B80 /* SalaryViewController.swift */; };
+		04D0F94129F07ED800805B80 /* SalaryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D0F94029F07ED800805B80 /* SalaryViewController.storyboard */; };
 		3B0486C829B662BC008CD4B7 /* AddAssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486C729B662BC008CD4B7 /* AddAssetsViewController.swift */; };
 		3B0928E229C88850006B172E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B0928E129C88850006B172E /* GoogleService-Info.plist */; };
 		3B0928E529C888D3006B172E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3B0928E429C888D3006B172E /* FirebaseAnalytics */; };
@@ -65,6 +67,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04D0F93E29F07EBE00805B80 /* SalaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryViewController.swift; sourceTree = "<group>"; };
+		04D0F94029F07ED800805B80 /* SalaryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SalaryViewController.storyboard; sourceTree = "<group>"; };
 		3B0486C729B662BC008CD4B7 /* AddAssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssetsViewController.swift; sourceTree = "<group>"; };
 		3B0928E129C88850006B172E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B1813F229B4C6AD00863CEC /* BudgetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetingCell.swift; sourceTree = "<group>"; };
@@ -135,6 +139,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04D0F93D29F07E6C00805B80 /* Salary */ = {
+			isa = PBXGroup;
+			children = (
+				04D0F93E29F07EBE00805B80 /* SalaryViewController.swift */,
+				04D0F94029F07ED800805B80 /* SalaryViewController.storyboard */,
+			);
+			path = Salary;
+			sourceTree = "<group>";
+		};
 		3B24379929CB119500611838 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +268,7 @@
 		3BE6745E29AA0A8B00E65930 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				04D0F93D29F07E6C00805B80 /* Salary */,
 				3B256F0529F02974006DA241 /* PrefferedBudgeting */,
 				3B4D693D29E70518008010B8 /* Budgeting */,
 				3B4D693C29E704C1008010B8 /* HomeViewController */,
@@ -376,6 +390,7 @@
 				3BE6746429AA0ADA00E65930 /* AnalyticsViewController.storyboard in Resources */,
 				3B0928E229C88850006B172E /* GoogleService-Info.plist in Resources */,
 				3BE6745129AA0A0000E65930 /* LaunchScreen.storyboard in Resources */,
+				04D0F94129F07ED800805B80 /* SalaryViewController.storyboard in Resources */,
 				3BE6746C29AA0CC900E65930 /* ProfileViewController.storyboard in Resources */,
 				3B2437A129CB1A1200611838 /* OnboardingImageCell.xib in Resources */,
 				3B1813F529B4C6AD00863CEC /* BudgetingCell.xib in Resources */,
@@ -398,6 +413,7 @@
 				3B0486C829B662BC008CD4B7 /* AddAssetsViewController.swift in Sources */,
 				3BE6745B29AA0A4900E65930 /* TabBarController.swift in Sources */,
 				3B2437A729CB30DA00611838 /* AppPreviewImage.swift in Sources */,
+				04D0F93F29F07EBE00805B80 /* SalaryViewController.swift in Sources */,
 				3B2437A329CB304000611838 /* OnboardingDataSource.swift in Sources */,
 				3BE6746229AA0AC500E65930 /* AnalyticsViewController.swift in Sources */,
 				3B62754029E583DE006EA28F /* AddSavingsViewController.swift in Sources */,

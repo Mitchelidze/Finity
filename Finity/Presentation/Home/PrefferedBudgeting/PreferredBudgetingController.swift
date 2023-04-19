@@ -8,7 +8,11 @@
 import UIKit
 
 class PreferredBudgetingController: UIViewController {
-
+    
+    @IBOutlet weak var necessitieslabelView: UILabel!
+    @IBOutlet weak var wantsLabelView: UILabel!
+    @IBOutlet weak var savingsLabelView: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

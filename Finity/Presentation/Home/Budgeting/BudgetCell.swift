@@ -27,7 +27,16 @@ class BudgetCell: UITableViewCell {
     }
     
     @IBAction func onTryForFree(_ sender: Any) {
+        guard let viewController = self.window?.rootViewController else {
+            return
+        }
         
+        let storyboard = UIStoryboard(name: "SalaryViewController", bundle: nil)
+        guard let salaryViewController = storyboard.instantiateViewController(withIdentifier: "SalaryViewController") as? SalaryViewController else {
+            return
+        }
+        
+        viewController.present(salaryViewController, animated: true, completion: nil)
     }
     
 }
