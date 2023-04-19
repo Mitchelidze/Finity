@@ -45,6 +45,8 @@
 		3B2437A329CB304000611838 /* OnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A229CB304000611838 /* OnboardingDataSource.swift */; };
 		3B2437A729CB30DA00611838 /* AppPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A629CB30DA00611838 /* AppPreviewImage.swift */; };
 		3B2437A929CB318300611838 /* AppPreviewTextContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2437A829CB318300611838 /* AppPreviewTextContent.swift */; };
+		3B256F0729F029B2006DA241 /* PreferredBudgetingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B256F0629F029B2006DA241 /* PreferredBudgetingController.swift */; };
+		3B256F0B29F029F3006DA241 /* PreferredBudgetingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B256F0A29F029F3006DA241 /* PreferredBudgetingController.storyboard */; };
 		3B37218E29E70B33007895E5 /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37218C29E70B33007895E5 /* BudgetCell.swift */; };
 		3B37218F29E70B33007895E5 /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B37218D29E70B33007895E5 /* BudgetCell.xib */; };
 		3B62754029E583DE006EA28F /* AddSavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62753F29E583DE006EA28F /* AddSavingsViewController.swift */; };
@@ -74,6 +76,8 @@
 		3B2437A229CB304000611838 /* OnboardingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDataSource.swift; sourceTree = "<group>"; };
 		3B2437A629CB30DA00611838 /* AppPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreviewImage.swift; sourceTree = "<group>"; };
 		3B2437A829CB318300611838 /* AppPreviewTextContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreviewTextContent.swift; sourceTree = "<group>"; };
+		3B256F0629F029B2006DA241 /* PreferredBudgetingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredBudgetingController.swift; sourceTree = "<group>"; };
+		3B256F0A29F029F3006DA241 /* PreferredBudgetingController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreferredBudgetingController.storyboard; sourceTree = "<group>"; };
 		3B37218C29E70B33007895E5 /* BudgetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCell.swift; sourceTree = "<group>"; };
 		3B37218D29E70B33007895E5 /* BudgetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetCell.xib; sourceTree = "<group>"; };
 		3B62753F29E583DE006EA28F /* AddSavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSavingsViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +173,15 @@
 			path = NetWorthCell;
 			sourceTree = "<group>";
 		};
+		3B256F0529F02974006DA241 /* PrefferedBudgeting */ = {
+			isa = PBXGroup;
+			children = (
+				3B256F0629F029B2006DA241 /* PreferredBudgetingController.swift */,
+				3B256F0A29F029F3006DA241 /* PreferredBudgetingController.storyboard */,
+			);
+			path = PrefferedBudgeting;
+			sourceTree = "<group>";
+		};
 		3B4D693C29E704C1008010B8 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +255,7 @@
 		3BE6745E29AA0A8B00E65930 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3B256F0529F02974006DA241 /* PrefferedBudgeting */,
 				3B4D693D29E70518008010B8 /* Budgeting */,
 				3B4D693C29E704C1008010B8 /* HomeViewController */,
 				3B2437AA29CC9E5600611838 /* NetWorthCell */,
@@ -365,6 +379,7 @@
 				3BE6746C29AA0CC900E65930 /* ProfileViewController.storyboard in Resources */,
 				3B2437A129CB1A1200611838 /* OnboardingImageCell.xib in Resources */,
 				3B1813F529B4C6AD00863CEC /* BudgetingCell.xib in Resources */,
+				3B256F0B29F029F3006DA241 /* PreferredBudgetingController.storyboard in Resources */,
 				3BE6746829AA0B3E00E65930 /* HomeViewController.storyboard in Resources */,
 				3B24379B29CB11B900611838 /* Onboarding.storyboard in Resources */,
 				3BE6744E29AA0A0000E65930 /* Assets.xcassets in Resources */,
@@ -393,6 +408,7 @@
 				3B37218E29E70B33007895E5 /* BudgetCell.swift in Sources */,
 				3B24379D29CB19C000611838 /* OnboardingViewController.swift in Sources */,
 				3BE6746629AA0B3300E65930 /* HomeViewController.swift in Sources */,
+				3B256F0729F029B2006DA241 /* PreferredBudgetingController.swift in Sources */,
 				3B1813F429B4C6AD00863CEC /* BudgetingCell.swift in Sources */,
 				3B2437A929CB318300611838 /* AppPreviewTextContent.swift in Sources */,
 			);
